@@ -166,7 +166,7 @@ input[type="search"].pageHead__searchField {
 
 input[type="search"].pageHead__searchField::placeholder {
   color: var(--pageHeadBoxForegroundColor);
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 button.pageHead__searchButton {
@@ -236,8 +236,6 @@ img.pageHead__searchButton {
   font-size: 1.15em;
 }
 
-
-
 /*
 **
 ** Page header utilities
@@ -277,12 +275,12 @@ img.pageHead__searchButton {
   align-items: center;
 }
 
-.pageFoot__pluralsightLogo {
+.pageFoot__Logo {
   margin: 0 auto;
   width: 3em;
 }
 
-.pageFoot__pluralsightMessage {
+.pageFoot__Message {
   font-size: 80%;
   margin: 0;
   padding: 1.5em 0 2em;
@@ -421,7 +419,7 @@ img.pageHead__searchButton {
 
 .locations__info,
 .locations__map {
-  width: calc(50% - 0.5em);
+  width: calc(100% - 1.5em);
 }
 
 .locations__info {
@@ -535,26 +533,16 @@ img.pageHead__searchButton {
   padding: 1em;
 }
 
-.account__itemContent--phone,
-.account__itemContent--postalCode {
+.account__itemContent--phone {
   max-width: 25%;
   min-width: 25%;
 }
 
 .account__itemContent--firstName,
 .account__itemContent--lastName,
-.account__itemContent--city,
-.account__itemContent--state,
-.account__itemContent--country,
-.account__itemContent--email,
-.account__itemContent--password {
+.account__itemContent--email {
   max-width: 50%;
   min-width: 50%;
-}
-
-.account__itemContent--street {
-  max-width: 75%;
-  min-width: 75%;
 }
 
 /*
