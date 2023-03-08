@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>WebDemo | Contact Us</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
   </head>
   <body >
         <div id="headerDiv"></div>
@@ -13,14 +13,13 @@
           <div class="container pageMain__container">
             <div class="pageMain__content">
               <h1 class="page__title">Contact Information</h1>
-              <!-- <div class="locations"> -->
-                <div class="locations__info">
+                <div class="contact__info">
                   <h2>Your Store</h2>
-                  <div class="locations__details">
-                    <h3 class="locations__header">Address</h3>
-                    <ul class="locations__list">
-                      <li class="locations__item locations__item--address">
-                        <svg aria-hidden="true" viewBox="0 0 24 24" class="location__Icon">
+                  <div class="contact__details">
+                    <h3 class="contact__header">Address</h3>
+                    <ul class="contact__list">
+                      <li class="contact__item contact__item--address">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" class="contact__Icon">
                           <path d="M12 2c3.196 0 6 2.618 6 5.602 0 3.093-2.493 7.132-6 12.661-3.507-5.529-6-9.568-6-12.661 0-2.984 2.804-5.602 6-5.602m0-2c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"></path>
                         </svg>
                         <address>
@@ -28,84 +27,79 @@
                           <div>Bengaluru, Pincode: 560010</div>
                         </address>
                       </li>
-                      <li class="locations__item">
-                        <svg aria-hidden="true" viewBox="0 0 24 24" class="location__Icon">
+                      <li class="contact__item">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" class="contact__Icon">
                           <path d="M9.762 1.322l2.843-1.322 4.041 7.89-2.725 1.341c-.537 1.259 2.159 6.289 3.297 6.372.09-.058 2.672-1.328 2.672-1.328l4.11 7.933s-2.764 1.354-2.854 1.396c-7.861 3.59-19.101-18.259-11.384-22.282zm1.929 1.274l-1.023.504c-5.293 2.762 4.178 21.185 9.648 18.686l.972-.474-2.271-4.383-1.026.5c-3.163 1.547-8.262-8.219-5.055-9.938l1.007-.497-2.252-4.398zm-.759 18.382c-1.474 1.442-3.914 1.708-4.604.522-.47-.809-.311-1.728-.127-2.793.201-1.161.429-2.478-.295-3.71-1.219-2.077-3.897-1.983-5.906-.671l.956 1.463c.829-.542 1.784-.775 2.493-.609 1.653.388 1.151 2.526 1.03 3.229-.212 1.223-.45 2.61.337 3.968 1.331 2.294 5.054 2.047 7.29-.091-.397-.407-.789-.84-1.174-1.308z"/>
                         </svg>
                         <a href="tel:1-310-456-5823">+91 97383-30902</a>
                       </li>
                     </ul>
                   </div>
-                  <!-- <div class="locations__details">
-                    <img src="assets/images/maps/map-03.svg" height="315" width="400" alt="Directions from your location to our store at 3456 Market Ave. Los Angeles, CA 94560" />                    
-                  </div> -->
                 </div>
                 <br/>
                 <hr/>
                 <br/>
-                <div class="locations__map">                  
-                  <div class="container pageMain__container account__container">
-                    <!-- <div id="mainContent" class="pageMain__content account__content" style="order: 1;"> -->
+                <div class="contact__map">                  
+                  <div class="container pageMain__container feedback__container">
+                    <!-- <div id="mainContent" class="pageMain__content feedback__content" style="order: 1;"> -->
                       <h2>Feedback Form</h2>
                       <div class="page__note">
                         All fields marked with
-                        <span class="account__required">*</span>
+                        <span class="feedback__required">*</span>
                         are required
                       </div>
-                      <form id="account-form" action="/account-success.html" class="account__form" autocomplete="no">
-                        <fieldset class="account__group">
-                          <legend class="account__groupTitle">
+                      <form id="feedback-form" action="#" class="feedback__form" autocomplete="no">
+                        <fieldset class="feedback__group">
+                          <legend class="feedback__groupTitle">
                             Personal Details
                           </legend>
-                          <div class="account__item">
-                            <span class="account__itemContent account__itemContent--firstName">
-                              <label for="first-name" class="account__label">
-                                First Name <span class="account__required">*</span>                                
+                          <div class="feedback__item">
+                            <span class="feedback__itemContent feedback__itemContent--firstName">
+                              <label for="first-name" class="feedback__label">
+                                First Name <span class="feedback__required">*</span>                                
                               </label>
-                              <input id="first-name" required type="text" onblur="validateFieldOnBlur(event)" class="account__textbox" autocomplete="no" />                  
+                              <input id="first-name" required type="text" class="feedback__textbox" autocomplete="no" />                  
                             </span>
                           </div>
-                          <div class="account__item">
-                            <span class="account__itemContent account__itemContent--lastName">
-                              <label for="last-name" class="account__label">
+                          <div class="feedback__item">
+                            <span class="feedback__itemContent feedback__itemContent--lastName">
+                              <label for="last-name" class="feedback__label">
                                 Last Name                    
                               </label>
-                              <input id="last-name" type="text" class="account__textbox" autocomplete="no" />
+                              <input id="last-name" type="text" class="feedback__textbox" autocomplete="no" />
                             </span>
                           </div>
-                          <div class="account__item account__item--phone">
-                            <span class="account__itemContent account__itemContent--phone">
-                              <label for="phone-number" class="account__label">
-                                Phone Number<span class="account__required">*</span>
+                          <div class="feedback__item">
+                            <span class="feedback__itemContent feedback__itemContent--phone">
+                              <label for="phone-number" class="feedback__label">
+                                Phone Number<span class="feedback__required">*</span>
                               </label>
-                              <input id="phone-number" type="number" class="account__textbox" autocomplete="no" />
+                              <input id="phone-number" type="number" class="feedback__textbox" autocomplete="no" />
                             </span>
                           </div>
-                          <div class="account__item">
-                            <span class="account__itemContent account__itemContent--email">
-                              <label for="email-address" class="account__label">
-                                Email Address <span class="account__required">*</span>                               
+                          <div class="feedback__item">
+                            <span class="feedback__itemContent feedback__itemContent--email">
+                              <label for="email-address" class="feedback__label">
+                                Email Address <span class="feedback__required">*</span>                               
                               </label>
-                              <input id="email-address" required type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" onblur="validateFieldOnBlur(event)" maxlength="70" class="account__textbox" autocomplete="no" />
+                              <input id="email-address" required type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="70" class="feedback__textbox" autocomplete="no" />
                             </span>
                           </div>
-                        </fieldset>   
-                                   
-                        <button type="submit" id="save-account" class="account__button">
+                        </fieldset>                                      
+                        <button type="submit" id="save-feedback" class="feedback__button">
                           Submit
                         </button>
                         <br/>
                       </form>
                     <!-- </div>            -->
                   </div>
-
                 </div>
-              <!-- </div> -->
             </div>
           </div>          
         </main>
         <div id="footerDiv"></div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>     
+      <script src="/assets/js/script.js"></script> 
       <script> 
           $(function(){
               $("#headerDiv").load("common/header.html");

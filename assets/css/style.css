@@ -300,62 +300,7 @@ img.pageHead__searchButton {
   text-align: center;
 }
 
-.home__blogList {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.home__blogImageContainer {
-  height: 0;
-  padding-top: 56%;
-  position: relative;
-}
-
-.home__blogImage {
-  height: 100%;
-  left: 0;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.home__blogItem {
-  background: #eee;
-  width: calc(33.334% - 0.6667em);
-  --pageLinkColor: #a25702;
-}
-
-.home__blogContent {
-  padding: 1em;
-}
-
-.home__blogPostTitle {
-  font-size: 150%;
-  line-height: 1.25;
-  margin-bottom: 0.375em;
-}
-
-.home__blogFooter {
-  border-top: solid 1px #ccc;
-  margin-top: 1em;
-  padding-top: 0.75em;
-}
-
-.home__blogButton {
-  color: var(--pageLinkColor);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.home__blogButton::before {
-  content: "Read More";
-}
-
-.home-test {
+.home-main {
   display: block;
   width: 100%;
   padding: 0 1.5em;
@@ -364,12 +309,30 @@ img.pageHead__searchButton {
 .home_image {
   display: inline-block;
   width: 100%;
+  object-fit: cover;
 }
 
 .home_video {
   display: inline-block;
   width: 100%;
+  object-fit: cover;
   height: 315px;
+}
+
+
+.about__blogTitle {
+  font-size: 180%;
+  font-weight: bold;
+  line-height: 1;
+  margin: 1.5em 0 1em;
+  padding: 0;
+  text-align: center;
+}
+
+.about-main {
+  display: block;
+  width: 100%;
+  padding: 0 1.5em;
 }
 
 /*
@@ -405,81 +368,81 @@ img.pageHead__searchButton {
 
 /*
 **
-** Locations
+** Contact Us
 ****************************************************************/
-.locations {
+.contact {
   display: flex;
   justify-content: space-between;
 }
 
-.locations a {
+.contact a {
   color: var(--pageLinkColor);
   text-decoration: none;
 }
 
-.locations__info,
-.locations__map {
+.contact__info,
+.contact__map {
   width: calc(100% - 1.5em);
 }
 
-.locations__info {
+.contact__info {
   border: solid 1px #ddd;
   padding: 1em;
 }
 
-.locations__details {
+.contact__details {
   margin: 2.75em 0 0;
 }
 
-.locations__header {
+.contact__header {
   font-size: 80%;
   margin-bottom: 1.75em;
   text-transform: uppercase;
 }
 
-.locations__list {
+.contact__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.locations__item {
+.contact__item {
   display: flex;
   margin-bottom: 0.75em;
 }
 
-.locations__item--address {
+.contact__item--address {
   align-items: flex-start;
 }
 
-.location__Icon {
+.contact__Icon {
   margin-right: 1em;
   width: 1.25em;
 }
 
-.locations__hours {
+.contact__hours {
   display: flex;
   flex-wrap: wrap;
   line-height: 2;
 }
 
-.locations__day {
+.contact__day {
   width: 8em;
 }
 
-.locations__time {
+.contact__time {
   width: calc(100% - 8em);
 }
 
-.locations__map {
+.contact__map {
   border: solid 1px #ddd;
 }
 
 /*
 **
-** Account group
+** Feedback group
 *****************************************************************/
-.account__group {
+.feedback__group {
   border: none;
   display: flex;
   flex-wrap: wrap;
@@ -487,7 +450,7 @@ img.pageHead__searchButton {
   padding: 0;
 }
 
-.account__groupTitle {
+.feedback__groupTitle {
   border-bottom: solid 1px #ddd;
   font-size: 170%;
   font-weight: bold;
@@ -498,71 +461,73 @@ img.pageHead__searchButton {
 
 /*
 **
-** Account item
+** Feedback item
 *****************************************************************/
-.account__item {
+.feedback__item {
   display: flex;
   margin-bottom: 1.25em;
   width: 100%;
 }
 
-.account__itemContent {
-  flex: 1;
-  position: relative;
-}
-
-.account__label {
+.feedback__label {
   display: block;
   font-size: 100%;
   margin-bottom: 0.375em;
 }
 
-.account__required {
+.feedback__itemContent {
+  flex: 1;
+  position: relative;
+}
+
+.feedback__label {
+  display: block;
+  font-size: 100%;
+  margin-bottom: 0.375em;
+}
+
+.feedback__required {
   color: #db0000;
   font-size: 125%;
 }
 
-.account__textbox {
+.feedback__textbox {
   width: 100%;
 }
 
-.account__itemNote {
+.feedback__itemNote {
   background: #eee;
   display: block;
   font-size: 80%;
   padding: 1em;
 }
 
-.account__itemContent--phone {
-  max-width: 25%;
-  min-width: 25%;
-}
-
-.account__itemContent--firstName,
-.account__itemContent--lastName,
-.account__itemContent--email {
-  max-width: 50%;
-  min-width: 50%;
+.feedback__itemContent--firstName,
+.feedback__itemContent--lastName,
+.feedback__itemContent--email,
+.feedback__itemContent--phone {
+  max-width: 60%;
+  min-width: 60%;
 }
 
 /*
 **
-** Account
+** Feedback
 *****************************************************************/
-.account__container {
+.feedback__container {
   border-bottom: solid 1px #ddd;
   padding-bottom: 0;
 }
 
-.account__content {
+.feedback__content {
   padding: 0 0 3em 1.5em;
 }
 
-.account__form {
+.feedback__form {
   padding-top: 1em;
 }
 
-.account__button {
+.feedback__button {
   background: #00008c;
   border: 0;
   color: white;
@@ -571,147 +536,34 @@ img.pageHead__searchButton {
   padding: 0.75em 1.5em;
 }
 
-a.account__button {
+a.feedback__button {
   background: #00008c;
   color: white;
   text-decoration: none;
 }
 
-.account__button--disabled,
-button.account__button--disabled {
+.feedback__button--disabled,
+button.feedback__button--disabled {
   cursor: default;
   opacity: 0.1;
 }
 
-.account__button--disabled:hover,
-button.account__button--disabled:hover {
+.feedback__button--disabled:hover,
+button.feedback__button--disabled:hover {
   text-decoration: none;
 }
 
 .page__note {
-  background: #eee;
+  background: #ecf1f4;
   font-size: 120%;
   margin-bottom: 1em;
   padding: 0.5em;
   width: 100%;
 }
 
-.page__note--success {
-  color: green;
-  background: rgba(0, 128, 0, 0.1);
-}
-
-.account__textbox {
-  width: 100%;
-}
-
-/*
-**
-** Account group
-*****************************************************************/
-.account__group {
-  border: none;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 2em;
-  padding: 0;
-}
-
-.account__groupTitle {
-  border-bottom: solid 1px #ddd;
-  font-size: 170%;
-  font-weight: bold;
-  margin-bottom: 0.75em;
-  padding: 0 0 0.25em;
-  width: 100%;
-}
-
-/*
-**
-** Account item
-*****************************************************************/
-.account__item {
-  display: flex;
-  margin-bottom: 1.25em;
-  width: 100%;
-}
-
-.account__itemContent {
-  flex: 1;
-  position: relative;
-}
-
-.account__label {
-  display: block;
-  font-size: 100%;
-  margin-bottom: 0.375em;
-}
-
-.account__required {
-  color: #db0000;
-  font-size: 125%;
-}
-
-.account__textbox {
-  width: 100%;
-}
-
-.account__itemNote {
-  background: #eee;
-  display: block;
-  font-size: 80%;
-  padding: 1em;
-}
-
-.account__itemContent--phone,
-.account__itemContent--postalCode {
-  max-width: 25%;
-  min-width: 25%;
-}
-
-.account__itemContent--firstName,
-.account__itemContent--lastName,
-.account__itemContent--city,
-.account__itemContent--state,
-.account__itemContent--country,
-.account__itemContent--email,
-.account__itemContent--password {
-  max-width: 50%;
-  min-width: 50%;
-}
-
-.account__itemContent--street {
-  max-width: 75%;
-  min-width: 75%;
-}
-
-/*
-**
-** Account item
-*****************************************************************/
-.account__validation {
-  display: block;
-  font-size: 80%;
-  position: absolute;
-  right: 0;
-  top: 2em;
-  transform: translateX(calc(100% + 1em));
-}
-
-.account__validationIcon {
-  fill: currentColor;
-  width: 2em;
-}
-
-.account__validationMessage {
-  display: block;
-  line-height: 1;
-}
-
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-
-  .locations__info,
-  .locations__map {
+  .contact__info,
+  .contact__map {
     width: calc(100% - 0.5em) !important;
   }
 }
@@ -720,8 +572,8 @@ button.account__button--disabled:hover {
   .pageHead__nav1 {
     margin-left: 10rem;
   }
-  .locations__info,
-  .locations__map {
+  .contact__info,
+  .contact__map {
     width: calc(100% - 0.5em) !important;
   }
 }
